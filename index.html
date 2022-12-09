@@ -5,22 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme-Lib</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
 <!-- Compressed CSS Foundation-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
-<link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <div class="top-bar title">
-        <h1>Meme Lib</h1>
+    <div class="top-bar primary title">
+        <h1>Meme-Lib</h1>
+
     </div>
-    <div class="grid-x grid-padding-x align-top">
-        <div class="cell small-4">I'm at the top (default)</div>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-4 boop">
 
-        <div class="cell small-8 mainContent"></div>
-      
+ 
+            <form class="card form-doodle" id="formSubmit">
+                <label for="memeAmount">How many memes would you like?</label>
+                <select name="memeAmount" id="memeAmount">
+                    <option id="n1">1</option>
+                    <option id="n2">2</option>
+                    <option id="n3">3</option>
+                    <option id="n4">4</option>
+                    <option id="n5">5</option>
+                    <option id="n6">6</option>
+                    <option id="n7">7</option>
+                    <option id="n8">8</option>
+                    <option id="n9">9</option>
+                    <option id="n10">10</option>
+                    <option id="n11">11</option>
+                    <option id="n12">12</option>
+                    <option id="n13">13</option>
+                    <option id="n14">14</option>
+                    <option id="n15">15</option>
+                    <option id="n16">16</option>
+                    <option id="n17">17</option>
+                    <option id="n18">18</option>
+                    <option id="n19">19</option>
+                    <option id="n20">20</option>
+                    <option id="n21">21</option>
+                    <option id="n22">22</option>
+                    <option id="n23">23</option>
+                    <option id="n24">24</option>
+                    <option id="n25">25</option>
 
-      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+                 
+                </select>
+<!--    
+                <label for="number">Select a number</label>
+                <select name="number" id="number">
+                  <option>1</option>
+                  <option selected="selected">2</option>
+                  <option>3</option>
+                
+               </select> -->
+
+              <button type="submit" class="btn">Submit</button>
+            </form>          
+        </div>
+        <div class="cell small-8 fluid mainContent">
+            <!--rendered content goes here-->
+        </div>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <!-- Compressed JavaScript Foundation -->
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
 <script src="./assets/script.js"></script>
