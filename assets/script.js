@@ -12,17 +12,42 @@
 //     })
         
 //     });
-var captionImgURL = `https://www.reddit.com/r/memes.json`
+// $(`#submitForm`).on(`submit`, function(event){
+//     event.preventDefault()
+//     var memeAmount = $(`#memeAmount`).val()
+//     getMEME(memeAmount)
+// })
+var formSumbitEl = document.getElementById(`formSubmit`)
+var formSubmitHandler = function (event) {
+    event.preventDefault();
+  
+    var memeAmount = $(`#memeAmount`).val()
+ 
+      getMEME(memeAmount)
+     }
+function getMEME(memeAmount){
+var captionImgURL = `https://www.reddit.com/r/memes.json?limit=${memeAmount}`
 $.ajax({
     url: captionImgURL,
     method: `GET`
 }).then(function(response){
+    $(`.maincontent`).empty()
     console.log(response.data.children)
     response.data.children.forEach(element => {
         console.log(element.data)
-        var picEL = `<img src="${element.data.url_overridden_by_dest}">`
-        $(`.mainContent`).append(picEL)
+        var picEL = ` <div class="card"">
+                        <div class="card-divider top">
+                        ${element.data.title}
+                        </div>
+                        <img src="${element.data.url_overridden_by_dest}">
+                      </div>`
+
     
+        $(`.mainContent`).append(picEL)
+       
     })
         
     });
+}
+
+formSumbitEl.addEventListener('submit', formSubmitHandler);
