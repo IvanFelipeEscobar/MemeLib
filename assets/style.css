@@ -32,10 +32,14 @@ h1, label, .top {
 fieldset {
     border: 1px;
   }
-.form-doodle{
+.form-doodle{display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
   background-image: linear-gradient(blue, rgb(8, 9, 60), black);
-  margin: 15px
+  margin: 15px;
+  height: 300px;
 
 }
 button{
