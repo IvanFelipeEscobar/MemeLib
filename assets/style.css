@@ -1,0 +1,56 @@
+h1 {
+  font-family: 'Diplomata SC';
+}
+h1, label, .top {
+  color: aliceblue;
+  font-weight: bolder;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(blue, rgb(8, 9, 60), black);
+}
+.mainContent {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    height: 100vh;
+    overflow: scroll;
+}
+.card {
+    margin-left: 10px;
+    width: 300px;
+}
+fieldset {
+    border: 1px;
+  }
+
+.form-doodle{
+  padding: 15px;
+  background-image: linear-gradient(blue, rgb(8, 9, 60), rgb(195, 237, 121));
+ 
+  margin: 15px
+
+}
+button{
+  background-color: aliceblue;
+}
+button:hover {
+  background-color: aqua;
+}
+.boop {
+  height: 100vh;
+  background-color: black;
+  display: block;
+  justify-content: center;
+
+}
+.top{
+
+  background-image: linear-gradient(blue, rgb(8, 9, 60), black);
+}
+
