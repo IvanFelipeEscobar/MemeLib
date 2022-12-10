@@ -17,7 +17,11 @@
 //     var memeAmount = $(`#memeAmount`).val()
 //     getMEME(memeAmount)
 // })
+var afterX = `` //starts after parameter as empty string which defaults to start
 var formSumbitEl = document.getElementById(`formSubmit`)
+
+
+
 var formSubmitHandler = function (event) {
     event.preventDefault();
   
@@ -26,24 +30,27 @@ var formSubmitHandler = function (event) {
       getMEME(memeAmount)
      }
 function getMEME(memeAmount){
-var captionImgURL = `https://www.reddit.com/r/memes.json?limit=${memeAmount}`
+    
+var captionImgURL = `https://www.reddit.com/r/memes.json?limit=${memeAmount}&after=${afterX}`
 $.ajax({
     url: captionImgURL,
     method: `GET`
 }).then(function(response){
-    $(`.maincontent`).empty()
-    console.log(response.data.children)
-    response.data.children.forEach(element => {
-        console.log(element.data)
-        var picEL = ` <div class="card"">
-                        <div class="card-divider top">
-                        ${element.data.title}
-                        </div>
-                        <img src="${element.data.url_overridden_by_dest}">
-                      </div>`
-
     
-        $(`.mainContent`).append(picEL)
+    
+    afterX = response.data.after //getting after code will queue next available meme, next time button is clicked so that the same meme dont just pop up over and over
+    console.log(response.data.children)
+
+    $(`.mainContent`).empty()
+    response.data.children.forEach(element => {
+    //console.log(element.data)
+    var picEL = ` 
+    <div class="card">
+        <div class="card-divider top">${element.data.title}
+        </div>
+        <img src="${element.data.url_overridden_by_dest}">
+    </div>`
+    $(`.mainContent`).append(picEL)
        
     })
         

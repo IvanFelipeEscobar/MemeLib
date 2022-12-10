@@ -23,7 +23,6 @@ h1, label, .top {
 }
 .card {
     margin-left: 10px;
-    width: 300px;
 }
 fieldset {
     border: 1px;
@@ -32,26 +31,27 @@ fieldset {
 .form-doodle{
   padding: 15px;
   background-image: linear-gradient(blue, rgb(8, 9, 60), black);
- 
   margin: 15px
 
 }
 button{
-  background-color: aliceblue;
+  background-color: blue;
+  color: aliceblue;
 }
 button:hover {
-  background-color: aqua;
+  background-color: aliceblue;
+  color: blue;
+
 }
 .boop {
+  display: flex;
+  flex-wrap: wrap;
   height: 100vh;
   background-color: black;
   display: block;
   justify-content: center;
-
 }
 .top{
-
   background-image: linear-gradient(blue, rgb(8, 9, 60), black);
 }
 
-  
