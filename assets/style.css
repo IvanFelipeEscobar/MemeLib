@@ -24,6 +24,11 @@ h1, label, .top {
 .card {
     margin-left: 10px;
 }
+.meme{
+  height: 300px;
+  max-width: 30%;
+  overflow:scroll;
+}
 fieldset {
     border: 1px;
   }
