@@ -17,7 +17,10 @@ $.ajax({
 }).then(function(response){
     console.log(response)
     $(`.mainContent`).empty()
-    for(i=0; i<memeAmount; i++){
+    var rando = Math.floor(Math.random()*74)
+    console.log(rando)
+    var limit = parseInt(rando)+parseInt(memeAmount)
+    for(let i=rando; i<limit; i++){
         console.log(response.data.memes[i].name)
         var picEL = ` 
         <div class="card meme"> 
