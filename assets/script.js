@@ -9,27 +9,29 @@ var formSubmitHandler = function (event) {
      }
 function getMEME(memeAmount){
     
-if($(`#memeType`).val()===`Blank Template`){
+if($(`#memeType`).val()===`Blank Template`){//if blank template is selected then it will execute this function for imgflip api to render blank memes on page
     var captionImgURL = `https://api.imgflip.com/get_memes`
 $.ajax({
     url: captionImgURL,
     method: `GET`
 }).then(function(response){
     console.log(response)
-    $(`#mainContent`).empty()
-    response.data.memes.forEach(element => {
-        console.log(element.name)
+    $(`.mainContent`).empty()
+    for(i=0; i<memeAmount; i++){
+        console.log(response.data.memes[i].name)
         var picEL = ` 
         <div class="card meme"> 
-            <div class="card-divider top">${element.name}
+            <div class="card-divider top">${response.data.memes[i].name}
             </div>
-            <img src="${element.url}">
+            <img src="${response.data.memes[i].url}">
         </div>`
         $(`.mainContent`).append(picEL)
-    })})
+
+    }
+})
     
 
-}else{
+}else{//else reddit api call renders memes on page
 
 var captionImgURL = `https://www.reddit.com/r/memes.json?limit=${memeAmount}&after=${afterX}`
 $.ajax({
