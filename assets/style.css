@@ -27,7 +27,6 @@ h1, label, .top {
 fieldset {
     border: 1px;
   }
-
 .form-doodle{
   padding: 15px;
   background-image: linear-gradient(blue, rgb(8, 9, 60), black);
@@ -54,4 +53,3 @@ button:hover {
 .top{
   background-image: linear-gradient(blue, rgb(8, 9, 60), black);
 }
-

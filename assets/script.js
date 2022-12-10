@@ -19,9 +19,6 @@
 // })
 var afterX = `` //starts after parameter as empty string which defaults to start
 var formSumbitEl = document.getElementById(`formSubmit`)
-
-
-
 var formSubmitHandler = function (event) {
     event.preventDefault();
   
@@ -32,15 +29,15 @@ var formSubmitHandler = function (event) {
 function getMEME(memeAmount){
     
 var captionImgURL = `https://www.reddit.com/r/memes.json?limit=${memeAmount}&after=${afterX}`
+
 $.ajax({
     url: captionImgURL,
     method: `GET`
 }).then(function(response){
+
     
     
     afterX = response.data.after //getting after code will queue next available meme, next time button is clicked so that the same meme dont just pop up over and over
-    console.log(response.data.children)
-
     $(`.mainContent`).empty()
     response.data.children.forEach(element => {
     //console.log(element.data)
@@ -51,6 +48,7 @@ $.ajax({
         <img src="${element.data.url_overridden_by_dest}">
     </div>`
     $(`.mainContent`).append(picEL)
+        
        
     })
         
