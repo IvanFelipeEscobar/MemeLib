@@ -29,10 +29,27 @@ h1, label, .top {
   max-width: 30%;
   overflow:scroll;
 }
+@media screen and (max-width: 900px) {
+  .meme {
+    width: 45%;
+    height:auto
+  }}
+ @media screen and (max-width: 641px) {
+    .meme {
+      max-width: 90%;
+      height: auto;
+    }
+  .form-doodle{height: auto;}}
+
+.meme:hover{
+  transform: scale(1.2);
+}
 fieldset {
     border: 1px;
   }
-.form-doodle{display: flex;
+.form-doodle{
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -40,6 +57,7 @@ fieldset {
   background-image: linear-gradient(blue, rgb(8, 9, 60), black);
   margin: 15px;
   height: 300px;
+  overflow: scroll;
 
 }
 button{
