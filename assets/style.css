@@ -1,6 +1,9 @@
 *{
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 h1 {
   font-family: 'Diplomata SC';
@@ -14,7 +17,7 @@ h1, label, .top {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 150px;
+    height: 10vh;
     background-image: linear-gradient(blue, rgb(8, 9, 60), black);
 }
 .mainContent {
@@ -22,31 +25,37 @@ h1, label, .top {
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    height: 100vh;
+    height: 90vh;
     overflow: scroll;
 }
 .card {
-    margin-left: 10px;
+ border: none;
 }
 .meme{
   height: 300px;
   max-width: 30%;
   overflow:scroll;
 }
-@media screen and (max-width: 900px) {
-  .meme {
-    width: 45%;
-    height:auto
-  }}
- @media screen and (max-width: 641px) {
-    .meme {
-      max-width: 90%;
-      height: auto;
-    }
-  .form-doodle{height: auto;}}
+@media screen and (max-width: 1350px){
+  .meme{
+    max-width: 45%;
+  }
+  
+}
+@media screen and (max-width: 800px) {
+  .meme{
+    max-width: 90%;
+  }
+}
+
+  
 
 .meme:hover{
   transform: scale(1.2);
+}
+.libmeme {
+  height: 300px;
+  overflow: scroll;
 }
 fieldset {
     border: 1px;
@@ -55,46 +64,40 @@ fieldset {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-shrink: 1;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-image: linear-gradient(blue, rgb(8, 9, 60), black);
+  background-color: black;
   margin: 15px;
-  height: 30%;
+  min-height: 300px;
   overflow: scroll;
-
-}
-button{
-  background-color: blue;
-  color: aliceblue;
-}
-button:hover {
-  background-color: aliceblue;
-  color: blue;
 
 }
 .library {
-  background-color: black;
-  font-family: 'Diplomata SC';
-  height: 60%;
-  overflow: scroll;
-  
-}
-
-.libMeme {
-  width: 200px;
-  margin:4px auto;
-
-}
-
-.boop {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  flex-direction: row;
+  align-items: center;
   background-color: black;
-  display: block;
+  height: 700px;
+  overflow: scroll;
+  margin: 10px;
+}
+.boop {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  background-color: black;
   justify-content: center;
 }
 .top{
-  background-image: linear-gradient(blue, rgb(8, 9, 60), black);
+  text-align: center;
+  background-color: black;
+  border: none;
 }
+#text {
+  text-align: center;
+  font-size: large;
+   color: aliceblue;
+  }

@@ -2,6 +2,7 @@ var afterX = `` //starts after parameter as empty string which defaults to start
 var formSumbitEl = document.getElementById(`formSubmit`)
 var url = ``
 var memeLibrary = JSON.parse(localStorage.getItem(`savedURL`)) || []
+var elem = new Foundation.Reveal($(`#confirmModal`));
 function formSubmitHandler(event) {
     event.preventDefault(); 
     var memeAmount = $(`#memeAmount`).val() 

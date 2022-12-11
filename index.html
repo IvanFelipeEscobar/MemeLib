@@ -14,15 +14,13 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <div class="top-bar primary title">
+    <div class="top-bar title">
         <h1>Meme-Lib</h1>
 
     </div>
     <div class="grid-x grid-padding-x">
         <div class="cell small-6 medium-4 boop">
-
- 
-            <form class="card form-doodle" id="formSubmit">
+            <form class="form-doodle" id="formSubmit">
                 <label for="memeType">What type of meme would you like?</label>
                 <select name="memeType" id="memeType">
                     <option>Blank Template</option>
@@ -32,16 +30,28 @@
                 <select name="memeAmount" id="memeAmount">
                     <!--option values rendered via javascript-->
                 </select>
-              <button type="submit" class="button">Submit</button>
+              <button type="submit" class="button primary expanded">Submit</button>
             </form> 
-            <div class="library">
-                <div class="card-divider top">MEME Library<button class="button alert" id="clearLib">clear</button></div>
+
+            <div class="card-divider top">MEME Library</div>
+            <div class="card-divider top"><button class="button alert expanded" data-open="confirmModal">clear</button></div>
+            <div class="card library">
+                <!--saved MEMEs go here-->
             </div>         
         </div>
         
-        <div class="cell small-6 medium-8 fluid mainContent">
-            <!--rendered content goes here-->
+        <div class="cell small-6 medium-8 fluid mainContent"><div id="text"><p>Choose between Blank format or Memes from the MEME subReddit, and chose a number of memes to generate. Once generated, you can simply click on the desired image and it will save to you library. HAPPY MEME-ING!!!!</p></div>
+            <!--API rendered content goes here-->
         </div>
+    </div>
+ 
+  <div class="reveal" id="confirmModal" data-reveal>
+    <h2>ARE YOU SURE YOU WOULD LIKE TO DELETE????</h2>
+    <button class="button alert expanded" id="clearLib">DELETE ALREADY!!!</button>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 <!--jquery-->
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <!-- Compressed JavaScript Foundation -->
