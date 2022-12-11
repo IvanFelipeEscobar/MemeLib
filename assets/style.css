@@ -97,7 +97,8 @@ fieldset {
   border: none;
 }
 #text {
+  margin: 38px;
   text-align: center;
-  font-size: large;
+  font-size:x-large;
    color: aliceblue;
   }
