@@ -3,7 +3,8 @@
   margin: 0px;
 }
 body{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  background-color: black;
+  font-family:'Hanalei Fill', cursive;
 }
 h1 {
   font-family: 'Diplomata SC';
@@ -18,7 +19,7 @@ h1, label, .top {
     justify-content: center;
     width: 100%;
     height: 10vh;
-    background-image: linear-gradient(blue, rgb(8, 9, 60), black);
+    background-image: linear-gradient(rgb(34, 110, 224), rgb(17, 59, 185), black);
 }
 .mainContent {
     background-color: black;
@@ -58,6 +59,7 @@ h1, label, .top {
   overflow: scroll;
 }
 fieldset {
+  background-color: gray;
     border: 1px;
   }
 .form-doodle{
@@ -102,3 +104,16 @@ fieldset {
   font-size:x-large;
    color: aliceblue;
   }
+.accordion {
+  color: aliceblue;
+  border: none;
+  height: 90%;
+  background-color: black;
+}
+ul, li, a, .accordion-content, .reveal{
+  font-size: large;
+  color: aliceblue;
+  text-rendering: optimizeLegibility;
+  border: none;
+  background-color: black;
+}
