@@ -8,7 +8,7 @@ consumers liking, once your desired memes are chosen it will save to your librar
 
 ![SCREEN SHOT](./assets/Screen%20Shot%202022-12-12%20at%2010.05.42%20AM.png)
 
-[DEPLOYED WEBSITE:] (https://ivanfelipeescobar.github.io/MemeLib/)
+[DEPLOYED WEBSITE] (https://ivanfelipeescobar.github.io/MemeLib/)
 
 
 
