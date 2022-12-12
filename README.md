@@ -26,3 +26,25 @@ press on the picture(s) and scroll over to the left and click on the blue submit
 
  chosen pictures into you meme library which is located above the clear feature tab.
 
+ ## CREDITS
+
+ Poject was made by:
+
+ -Ivan Felipe Escobar
+
+ -Jordan Grainger 
+
+ -Thaddeus Freeman
+
+ -Tyler Johnson
+
+ -Yasaman Edrisian
+
+ Top MEMEs are obtained via the Reddit API
+
+ Blank format MEMEs are obtained via the ImgFlip API
+
+ CSS Framework provided via CDN by Foundation
+
+ 
+
