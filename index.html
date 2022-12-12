@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme-Lib</title>
+<!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hanalei+Fill&family=Indie+Flower&display=swap" rel="stylesheet"><!-- Compressed CSS Foundation-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="top-bar title">
+        <h1>Meme-Lib</h1>
+
+    </header>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-6 medium-4 boop">
+            <ul class="accordion" data-accordion>
+                <li class="accordion-item is-active" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">SEARCH FOR MEMES</a>
+              
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content" data-tab-content>
+                    <form class="form-doodle" id="formSubmit">
+                        <label for="memeType">What type of meme would you like?</label>
+                        <select name="memeType" id="memeType">
+                            <option>Blank Template</option>
+                            <option>Top Reddit MEMEs </option>
+                        </select>
+                        <label for="memeAmount">How many memes would you like?</label>
+                        <select name="memeAmount" id="memeAmount">
+                            <!--option values rendered via javascript-->
+                        </select>
+                      <button type="submit" class="button primary expanded">Submit</button>
+                    </form> 
+                  </div>
+                </li>
+                <li class="accordion-item is-active" data-accordion-item>
+                    <!-- Accordion tab title -->
+                    <a href="#" class="accordion-title">MEME LIBRARY</a>
+                
+                    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                    <div class="accordion-content" data-tab-content>
+                        <div class="top"><button class="button alert expanded" data-open="confirmModal">clear</button></div>
+                        <div class="library">
+                            <!--saved MEMEs go here-->
+                        </div>  
+                     
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+        
+        <div class="cell small-6 medium-8 fluid mainContent"><div id="text"><p>Choose between Blank format or Memes from the MEME subReddit, and chose a number of memes to generate. Once generated, you can simply click on the desired image and it will save to you library. HAPPY MEME-ING!!!!</p></div>
+            <!--API rendered content goes here-->
+        </div>
+    </div>
+ 
+  <div class="reveal" id="confirmModal" data-reveal>
+    <h2>ARE YOU SURE YOU WOULD LIKE TO DELETE????</h2>
+    <button class="button alert expanded" id="clearLib">DELETE ALREADY!!!</button>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<!-- Compressed JavaScript Foundation -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+<script src="./assets/script.js"></script>
+</body>
+</html>
