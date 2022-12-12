@@ -3,6 +3,7 @@ var formSumbitEl = document.getElementById(`formSubmit`)
 var url = ``
 var memeLibrary = JSON.parse(localStorage.getItem(`savedURL`)) || []
 var elem = new Foundation.Reveal($(`#confirmModal`));
+var elem1 = new Foundation.Accordion($(`.accordion`));
 function formSubmitHandler(event) {
     event.preventDefault(); 
     var memeAmount = $(`#memeAmount`).val() 
