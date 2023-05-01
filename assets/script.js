@@ -9,14 +9,14 @@ function formSubmitHandler(event) {
     var memeAmount = $(`#memeAmount`).val() 
     getMEME(memeAmount)
 }
-
+var xxx = ['ba', 'be', 1, 2]
 function getMEME(memeAmount){    
 if($(`#memeType`).val()===`Blank Template`) {fetchRequestBlank(memeAmount)}else{fetchRequestReddit(memeAmount)}}
 
 function renderContent(id, url){
 var picEL = ` 
     <div class="card meme"> 
-        <div class="card-divider top" id="saveMeme">${id}
+        <div id="saveMeme">${id}
         </div>
         <img class="thumbnail" src="${url}" alt="${id}">
     </div>`//this html code will be rendered onto the html document in the main content area

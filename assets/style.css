@@ -4,7 +4,6 @@
 }
 body{
   background-color: black;
-  font-family:'Hanalei Fill', cursive;
 }
 h1 {
   font-family: 'Diplomata SC';
@@ -14,46 +13,25 @@ h1, label, .top {
   font-weight: bolder;
 }
 .title {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 10vh;
+    height: 10vh; */
     background-image: linear-gradient(rgb(34, 110, 224), rgb(17, 59, 185), black);
 }
 .mainContent {
-    background-color: black;
+    /* background-color: black;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     padding: 15px;
-    height: 90vh;
-    overflow: scroll;
 }
 .card {
+  padding: auto;
+  margin: 15px;
  border: none;
 }
-.meme{
-  height: 300px;
-  max-width: 30%;
-  overflow:scroll;
-}
-@media screen and (max-width: 1350px){
-  .meme{
-    max-width: 45%;
-  }
-  
-}
-@media screen and (max-width: 800px) {
-  .meme{
-    max-width: 90%;
-  }
-}
 
-  
-
-.meme:hover{
-  transform: scale(1.2);
-}
 .libmeme {
   height: 300px;
   overflow: scroll;
@@ -63,35 +41,33 @@ fieldset {
     border: 1px;
   }
 .form-doodle{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-shrink: 1;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 15px;
   background-color: black;
   margin: 15px;
-  min-height: 300px;
-  overflow: scroll;
-
+  /* min-height: 300px; */
 }
 .library {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
   background-color: black;
-  height: 700px;
-  overflow: scroll;
+  /* height: 700px;
+  overflow: scroll; */
   margin: 10px;
 }
 .boop {
-  display: flex;
+  /* display: flex;
   height: 90vh;
-  flex-direction: column;
+  flex-direction: column; */
   background-color: black;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .top{
   text-align: center;
@@ -107,13 +83,13 @@ fieldset {
 .accordion {
   color: aliceblue;
   border: none;
-  height: 90%;
+  /* height: 90%; */
   background-color: black;
 }
 ul, li, a, .accordion-content, .reveal{
   font-size: large;
   color: aliceblue;
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility; */
   border: none;
   background-color: black;
 }
