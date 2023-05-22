@@ -2,9 +2,7 @@
 
 ## DESCRIPTION
 
- MEME-LIB is a website that produces a variety amount of memes from a choice of two formats in which is depending on the 
- 
-consumers liking, once your desired memes are chosen it will save to your library.
+Meme-Lib is an html application styled using Foundation Framework. The application allows user to fetch a selected number of memes from either the Reddit API or the ImgFlip API, after which the user can click on preferred meme to 'save' it to the library. Library memory is persisted through the use of local storage.
 
 ![SCREEN SHOT](./assets/Screen%20Shot%202022-12-12%20at%2010.05.42%20AM.png)
 
